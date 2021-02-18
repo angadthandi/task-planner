@@ -28,16 +28,23 @@ class Task {
         $this->User = $user;
     }
 
-    public function setTaskStatus(int $taskStatus): bool {
+    public function getID(): int {
+        return $this->id;
+    }
 
+    public function setTaskStatus(int $taskStatus): bool {
+        $this->taskStatus = $taskStatus;
+        return true;
     }
 
     public function setTaskType(int $taskType): bool {
-
+        $this->taskType = $taskType;
+        return true;
     }
 
     public function setTaskUser(User $user): bool {
-
+        $this->user = $user;
+        return true;
     }
 
 }
